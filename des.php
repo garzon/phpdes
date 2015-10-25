@@ -321,7 +321,7 @@ class Des extends DesModel {
 // testcases
 // $des = new Des("secretki");
 // var_dump(bin2hex($des->encrypt("hello world! I'm Garzon. h4Ha.")));
-// var_dump($des->decrypt(hex2bin("b91c422995fca5db7cba24f79a28c07b188bd0325552bbfe01214b3108a0f2b7")));
+// var_dump($des->decrypt(hex2bin("214247e7ddca9b21383d6f9ffa00b9727215a65b2171acd21bad7d3cd6afc59f")));
 
 if(isset($_GET['action'])) {
 	if(isset($_FILES["desData"]["tmp_name"])) {

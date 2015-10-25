@@ -1,11 +1,15 @@
 # phpdes by garzon
 
 ### 实现
-这是一个用64位php和位运算实现的des算法，带PKCS5 padding，使用CBC模式，界面使用html+bootstrap+angularjs实现，推荐使用最新Chrome浏览器浏览
+这是一个用64位php和位运算实现的*6轮*des算法，带PKCS5 padding，使用CBC模式，界面使用html+bootstrap+angularjs实现，推荐使用最新Chrome浏览器浏览
 
 ### 程序
 由于这是一个Web app，并没有可执行程序，请点击下面的链接查看（可能需翻墙）
 [http://garzon.science/phpdes/des.php](http://garzon.science/phpdes/des.php)
+
+### 运行环境
+php >= 5.4
+64位php
 
 ### 源代码
 为了方便，代码都在des.php文件里，请查看des.php即可。    
@@ -27,10 +31,10 @@
 
 ```php
 // testcases
-$des = new Des("secretki");
+$des = new Des("secretki");  // 使用密钥secretki，CBC初始向量iv为构造函数的默认参数'in1tIvKi'
 var_dump(bin2hex($des->encrypt("hello world! I'm Garzon. h4Ha.")));
-// 上面的语句输出b91c422995fca5db7cba24f79a28c07b188bd0325552bbfe01214b3108a0f2b7（即用hex编码的加密后的二进制字符串）
+// 上面的语句输出214247e7ddca9b21383d6f9ffa00b9727215a65b2171acd21bad7d3cd6afc59f（即用hex编码的加密后的二进制字符串）
 
-var_dump($des->decrypt(hex2bin("b91c422995fca5db7cba24f79a28c07b188bd0325552bbfe01214b3108a0f2b7")));
+var_dump($des->decrypt(hex2bin("214247e7ddca9b21383d6f9ffa00b9727215a65b2171acd21bad7d3cd6afc59f")));
 // 上面的语句输出hello world! I'm Garzon. h4Ha. 证明解密算法正确
 ```
