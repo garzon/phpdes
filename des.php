@@ -43,7 +43,7 @@ class DesModel {
 
 	private $subKeys;
 
-	const ROUND_NUM = 16;
+	const ROUND_NUM = 6;
 
 	private $subkey_ipc = [
 		56, 48, 40, 32, 24, 16,  8,
