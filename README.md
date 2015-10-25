@@ -5,7 +5,7 @@
 
 ### 程序
 由于这是一个Web app，并没有可执行程序，请点击下面的链接查看（可能需翻墙）
-[http://garzon.science/phpdes/des.php](phpdes)
+[http://garzon.science/phpdes/des.php](http://garzon.science/phpdes/des.php)
 
 ### 源代码
 为了方便，代码都在des.php文件里，请查看des.php即可。    
